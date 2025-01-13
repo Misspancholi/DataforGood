@@ -1,10 +1,9 @@
 select* from health ;
--- q1 how many types of diagnosis are there in data? sabse jyada
+-- Question 1: Count how many diagnosis has recorded in mental health data.
 SELECT diagnosis, COUNT(*) 
-FROM health GROUP BY diagnosis order by Diagnosis
- limit 1;
+FROM health GROUP BY diagnosis order by Diagnosis;
  
- -- q2 Count the number of patients by age group:
+ -- Question 2: Count the number of patient by specific age group ?
 
 SELECT 
   age_group,
@@ -20,9 +19,16 @@ FROM (
 ) AS subquery
 GROUP BY age_group order by age_group;
 
--- q3 count patient with each mental condition
+-- Question 3: Display the type of medication and Therapy is used for each disorder?
 
-SELECT Diagnosis, count(*) as total from health 
-group by Diagnosis;
+SELECT Diagnosis , Medication, `Therapy Type` from health ;
 
+-- Question 4: Show the data of those females whose having depressive disorder with the least physical activity?
+
+SELECT *
+FROM health
+WHERE gender = 'Female'
+AND diagnosis = 'Major Depressive Disorder';
+
+-- q5 a
 
