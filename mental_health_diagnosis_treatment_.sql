@@ -1,7 +1,9 @@
-select* from health ;
+SELECT * FROM health ;
+
 -- Question 1: Count how many diagnosis has recorded in mental health data.
+
 SELECT diagnosis, COUNT(*) 
-FROM health GROUP BY diagnosis order by Diagnosis;
+FROM health GROUP BY diagnosis ORDER BY Diagnosis;
  
  -- Question 2: Count the number of patient by specific age group ?
 
@@ -17,11 +19,11 @@ FROM (
     END AS age_group
   FROM health
 ) AS subquery
-GROUP BY age_group order by age_group;
+GROUP BY age_group ORDER BY age_group;
 
--- Question 3: Display the type of medication and Therapy is used for each disorder?
+-- Question 3: Display the type of Medication and Therapy is used for each disorder?
 
-SELECT Diagnosis , Medication, `Therapy Type` from health ;
+SELECT Diagnosis , Medication, `Therapy Type` FROM health ;
 
 -- Question 4: Show the data of those females whose having depressive disorder with the least physical activity?
 
@@ -30,5 +32,17 @@ FROM health
 WHERE gender = 'Female'
 AND diagnosis = 'Major Depressive Disorder';
 
--- q5 a
+-- Question 5: Show the details of recovered males from disorder?
 
+SELECT *
+FROM health
+WHERE gender = 'male'
+AND Outcome = 'improved';
+
+-- Question 6: Show the count of MALE and FEMALE recovered?
+
+SELECT Gender , COUNT(Gender) 
+AS Total 
+FROM health 
+WHERE Outcome='improved' 
+GROUP BY Gender;  
