@@ -46,3 +46,11 @@ AS Total
 FROM health 
 WHERE Outcome='improved' 
 GROUP BY Gender;  
+
+-- Question 7: Show what therapies taking more than 4 months ? (approx)
+
+SELECT `therapy type`, `Treatment Duration (weeks)` 
+FROM health
+WHERE `Treatment Duration (weeks)` > 14;
+
+-- Question 8: 
