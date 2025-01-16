@@ -54,3 +54,13 @@ FROM health
 WHERE `Treatment Duration (weeks)` > 14;
 
 -- Question 8: 
+
+SELECT gender, COUNT(gender)
+AS  stressed 
+FROM health
+WHERE `AI-Detected Emotional State` = 'stressed' 
+GROUP BY gender;
+
+-- Question 9:
+
+
