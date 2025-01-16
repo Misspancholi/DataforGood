@@ -1,36 +1,45 @@
-# dataforgood
-# Mental Health Data Analysis
+**DataForGood: Mental Health Diagnosis Analysis using SQL**
 
-A data analysis project exploring the relationship between mental health and demographic factors.
+*Introduction*
 
-# Getting Started
-1. Install Python 3.8 and the required libraries.
-2. Download the dataset from (link unavailable).
-3. Run the analysis script using python (link unavailable).
+This repository contains a SQL project analyzing the Kaggle dataset on mental health diagnosis. The goal is to provide a comprehensive guide for beginners to learn the basics of SQL while exploring a socially relevant topic.
 
-# Features
-1. Data visualization using Matplotlib and Seaborn.
-2. Statistical analysis using Pandas and Scikit-learn.
+*Dataset*
 
-# Data
-1. Dataset: Mental Health Data (Kaggle).
-2. Data description: The dataset contains demographic information and mental health indicators for 500 individuals.
+The dataset used in this project is from Kaggle's Mental Health Diagnosis competition.
 
-# Results
-1. Key findings: Our analysis reveals a significant correlation between mental health and income level.
-2. Visualizations: See the plots and charts in the results folder.
+*Software Used*
 
-# License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- SQL Workbench for programming
+- Jupyter Notebook for data visualization
+- Matplotlib libraries for data visualization
 
-# Contributing
-Contributions are welcome! Please see the CONTRIBUTING file for guidelines.
+*Project Overview*
 
-# Authors
-- (link unavailable)
+This project covers basic SQL concepts, including:
 
-# Acknowledgments
-We thank (link unavailable) for providing the dataset.
+- Data cleaning and preprocessing
+- Data visualization using SQL and Matplotlib
+- Data analysis using SQL queries
 
-# References
-- (link unavailable)
+*License*
+
+This repository is licensed under the MIT License.
+
+*Getting Started*
+
+To get started with this project:
+
+1. Clone the repository
+2. Install SQL Workbench and Jupyter Notebook
+3. Import the dataset into SQL Workbench
+4. Run the SQL queries and visualize the results using Matplotlib
+
+*Contributing*
+
+Contributions are welcome! If you'd like to contribute to this project, please submit a pull request or report an issue.
+
+*Acknowledgments*
+
+- Kaggle for providing the mental health diagnosis dataset
+- SQL Workbench, Jupyter Notebook, and Matplotlib for providing the necessary tools for analysis and visualization
